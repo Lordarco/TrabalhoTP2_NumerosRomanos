@@ -21,6 +21,7 @@ TEST_CASE("Verificação números repetidos", "[romanos]"){
     REQUIRE( romanos_para_decimal("LL") == -1);
     REQUIRE( romanos_para_decimal("CCCC") == -1);
     REQUIRE( romanos_para_decimal("DD") == -1);
+    REQUIRE(romanos_para_decimal("MMMM") == -1);
 }
 
 

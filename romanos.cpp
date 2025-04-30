@@ -22,6 +22,10 @@ int romanos_para_decimal(char const * num_romano){
   {
     return 100;
   }
+  else if (strcmp(num_romano, "D") == 0)
+  {
+    return 500;
+  }
   return -1; 
 }
  

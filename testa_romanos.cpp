@@ -16,6 +16,7 @@ TEST_CASE("Verificacao números básicos", "[romanos]") {
 }
 TEST_CASE("Verificação números repetidos", "[romanos]"){
     REQUIRE( romanos_para_decimal("III") == 3);
+    REQUIRE(romanos_para_decimal("VV") == -1);
     
 }
 

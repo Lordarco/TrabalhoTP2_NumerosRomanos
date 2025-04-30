@@ -10,6 +10,7 @@ TEST_CASE("Conversão de números básicos", "[romanos]") {
     REQUIRE( romanos_para_decimal("X") == 10);
     REQUIRE( romanos_para_decimal("L") == 50);
     REQUIRE( romanos_para_decimal("C") == 100);
+    REQUIRE( romanos_para_decimal("D") == 500);
 }
 
 

@@ -41,7 +41,7 @@ for(int i = 0; i < tamanho ;i++){
   }
 }
 
-if(contador_I > 3 || contador_V > 1 || contador_X > 3 || contador_L > 1) {
+if(contador_I > 3 || contador_V > 1 || contador_X > 3 || contador_L > 1 || contador_C > 3) {
   return -1;
 }
 

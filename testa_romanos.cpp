@@ -26,7 +26,7 @@ TEST_CASE("Verificação números repetidos", "[romanos]"){
 }
 
 TEST_CASE("Numeros para Subtrair", "[romanos]"){
-    //REQUIRE( romanos_para_decimal("IV") == 4);
+    REQUIRE( romanos_para_decimal("IV") == 4);
 }
 
 /*

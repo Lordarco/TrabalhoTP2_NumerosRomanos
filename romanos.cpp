@@ -20,7 +20,7 @@ for(int i = 0; i < tamanho ;i++){
     total += 5;
   }
   else if(num_romano[i] == 'X'){
-    contador_X += 10;
+    contador_X ++;
     total += 10;
   }
   else if(num_romano[i] == 'L'){
@@ -41,7 +41,7 @@ for(int i = 0; i < tamanho ;i++){
   }
 }
 
-if(contador_I > 3 || contador_V > 1) {
+if(contador_I > 3 || contador_V > 1 || contador_X > 3) {
   return -1;
 }
 

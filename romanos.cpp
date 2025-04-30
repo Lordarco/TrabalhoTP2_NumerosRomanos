@@ -4,10 +4,16 @@
 #include <cstring>
 
 int romanos_para_decimal(char const * num_romano){
-  if(strcmp(num_romano, "I") == 0){
-    return 1;
+
+int contador_I = 0;
+int tamanho = strlen(num_romano);
+
+  
+  for(int i=0;i<tamanho;i++){
+    if(num_romano[i] == 'I') contador_I++;
   }
-  else if(strcmp(num_romano, "V") == 0){
+  
+  if(strcmp(num_romano, "V") == 0){
     return 5;
   }
   else if (strcmp(num_romano, "X") == 0)
@@ -30,6 +36,13 @@ int romanos_para_decimal(char const * num_romano){
   {
     return 1000;
   }
-  return -1; 
+  if(contador_I > 3){
+    return -1;
+    }
+    else{
+      return contador_I;
+    }
+
+  return -1;
 }
  

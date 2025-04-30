@@ -14,6 +14,7 @@ TEST_CASE("Verificacao números básicos", "[romanos]") {
     REQUIRE( romanos_para_decimal("M") == 1000);
 
 }
+
 TEST_CASE("Verificação números repetidos", "[romanos]"){
     REQUIRE( romanos_para_decimal("IIII") == -1);
     REQUIRE( romanos_para_decimal("VV") == -1);
@@ -24,6 +25,9 @@ TEST_CASE("Verificação números repetidos", "[romanos]"){
     REQUIRE(romanos_para_decimal("MMMM") == -1);
 }
 
+TEST_CASE("Numeros para Subtrair", "[romanos]"){
+    //REQUIRE( romanos_para_decimal("IV") == 4);
+}
 
 /*
 TEST_CASE( "Numeros romanos - algarismos inv�lidos", "[romanos]" ) {

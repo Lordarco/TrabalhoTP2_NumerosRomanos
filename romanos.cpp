@@ -61,15 +61,27 @@ for(int i = 0; i < tamanho;i++){
   }
   else if(num_romano[i] == 'C'){
     contador_C ++;
-    total += 100;
+    if(atual < proximo){
+      total += proximo - atual;
+      i++;
+    }
+    else total += 100;
   }
   else if(num_romano[i] == 'D'){
     contador_D ++;
-    total += 500;
+    if(atual < proximo){
+      total += proximo - atual;
+      i++;
+    }
+    else total += 500;
   }
   else if(num_romano[i] == 'M'){
     contador_M ++;
-    total += 1000;
+    if(atual < proximo){
+      total += proximo - atual;
+      i++;
+    }
+    else total += 1000;
   }
 }
 

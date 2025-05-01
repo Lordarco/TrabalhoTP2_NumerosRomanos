@@ -34,12 +34,16 @@ TEST_CASE("Numeros para Subtrair", "[romanos]"){
     REQUIRE( romanos_para_decimal("CM") == 900 );
 }
 
-/*
 TEST_CASE( "Numeros romanos - algarismos inv�lidos", "[romanos]" ) {
     REQUIRE( romanos_para_decimal("G") == -1 );
-    
     REQUIRE( romanos_para_decimal("i") == -1 );
+    REQUIRE( romanos_para_decimal("A") == -1 );
+    REQUIRE( romanos_para_decimal("Z") == -1 );
+    REQUIRE( romanos_para_decimal("IC") == -1 );
+    REQUIRE( romanos_para_decimal("VX") == -1 );
+    REQUIRE( romanos_para_decimal("123") == -1 );
+    REQUIRE( romanos_para_decimal("") == -1 );
 
     
 }
- */
+

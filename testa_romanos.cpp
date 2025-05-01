@@ -30,6 +30,8 @@ TEST_CASE("Numeros para Subtrair", "[romanos]"){
     REQUIRE( romanos_para_decimal("IX") == 9);
     REQUIRE( romanos_para_decimal("XL") == 40 );
     REQUIRE( romanos_para_decimal("XC") == 90 );
+    REQUIRE( romanos_para_decimal("CD") == 400 );
+    REQUIRE( romanos_para_decimal("CM") == 900 );
 }
 
 /*

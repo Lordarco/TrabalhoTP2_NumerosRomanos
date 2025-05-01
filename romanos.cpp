@@ -45,11 +45,19 @@ for(int i = 0; i < tamanho;i++){
   }
   else if(num_romano[i] == 'X'){
     contador_X ++;
-    total += 10;
+    if(atual < proximo){
+      total += proximo - atual;
+      i++;
+    }
+    else total += 10;
   }
   else if(num_romano[i] == 'L'){
      contador_L ++;
-     total += 50;
+     if(atual < proximo){
+      total += proximo - atual;
+      i++;
+    }
+    else total += 50;
   }
   else if(num_romano[i] == 'C'){
     contador_C ++;

@@ -83,6 +83,7 @@ for(int i = 0; i < tamanho;i++){
     }
     else total += 1000;
   }
+  else return valor_romano(0);
 }
 
 if(contador_I > 3 || contador_V > 1 || contador_X > 3 || contador_L > 1 || contador_C > 3 || contador_D > 1 || contador_M > 3) {
